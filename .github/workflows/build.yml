@@ -20,6 +20,32 @@ jobs:
             libnuma-dev librbd-dev librdmacm-dev libsasl2-dev libsdl2-dev libseccomp-dev libsnappy-dev \
             libssh-dev libvde-dev libvdeplug-dev libvte-2.91-dev libxen-dev liblzo2-dev valgrind xfslibs-dev \
             libnfs-dev libiscsi-dev equivs devscripts
+          apt-get install -y autotools-dev autogen dh-autoreconf dkms doxygen check pkg-config \
+            groff quilt dpatch automake autoconf libtool lintian libdevel-cycle-perl \
+            libjson-perl libcommon-sense-perl liblinux-inotify2-perl libio-stringy-perl \
+            libstring-shellquote-perl dh-systemd rpm2cpio libsqlite3-dev sqlite3 \
+            libglib2.0-dev librrd-dev librrds-perl rrdcached libdigest-hmac-perl \
+            libxml-parser-perl gdb libcrypt-openssl-random-perl \
+            libcrypt-openssl-rsa-perl libnet-ldap-perl libauthen-pam-perl \
+            libjson-xs-perl libterm-readline-gnu-perl oathtool libmime-base32-perl \
+            liboath0 libpci-dev texi2html libsdl1.2-dev libgnutls28-dev \
+            libspice-protocol-dev xfslibs-dev libnuma-dev libaio-dev \
+            pve-libspice-server-dev libusbredirparser-dev glusterfs-common \
+            libusb-1.0-0-dev librbd-dev libpopt-dev iproute bridge-utils numactl \
+            glusterfs-common ceph-common python-ceph libgoogle-perftools4 \
+            libfile-chdir-perl lvm2 glusterfs-client liblockfile-simple-perl \
+            libsystemd-dev libreadline-gplv2-dev libio-multiplex-perl \
+            libnetfilter-log-dev libipset3 ipset socat libsasl2-dev libogg-dev \
+            python-pyparsing libfilesys-df-perl libcrypt-ssleay-perl \
+            libfile-readbackwards-perl libanyevent-perl libanyevent-http-perl \
+            unzip liblocale-po-perl libfile-sync-perl cstream \
+            lzop dtach hdparm gdisk parted ttf-dejavu-core \
+            liblzma-dev dosfstools mtools libxen-dev libfuse-dev libcpg-dev libquorum-dev \
+            libcmap-dev libuuid-perl libqb-dev libapparmor-dev docbook2x libcap-dev \
+            dh-apparmor graphviz libseccomp-dev libglib-perl libgtk3-perl libnss3-dev \
+            libdlm-dev libudev-dev asciidoc-dblatex source-highlight libiscsi-dev \
+            libiscsi7 librsvg2-bin libarchive-dev libgpgme-dev libcurl4-gnutls-dev \
+            libtest-mockmodule-perl libjemalloc-dev libjpeg-dev
       - name: Checkout Qemu
         run: |
           git clone git://git.proxmox.com/git/pve-qemu.git
