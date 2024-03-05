@@ -36,7 +36,7 @@ jobs:
       - name: Build pve-qemu
         run: |
           cd pve-qemu
-          mk-build-deps --install
+          sudo mk-build-deps --install
           make clean distclean
           make
           ls -l
