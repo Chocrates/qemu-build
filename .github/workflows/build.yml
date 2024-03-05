@@ -12,7 +12,8 @@ jobs:
           apt-get install -y wget
           echo "deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription" | tee -a /etc/apt/sources.list 
           wget -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg "https://enterprise.proxmox.com/debian/proxmox-release-bookworm.gpg"
-          apt-get update
+          apt-get update && apt-get dist-upgrade
+          apt-get install proxmox-ve
           apt-get install -y libzstd1 build-essential git git-email debhelper pve-doc-generator
           #apt-get install -y git make libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build \
            # build-essential libaio-dev libbluetooth-dev libcapstone-dev libbrlapi-dev libbz2-dev \
