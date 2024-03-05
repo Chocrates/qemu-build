@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "deb  [trusted=yes] http://download.proxmox.com/debian/pve bookworm pve-no-subscription" | sudo tee -a /etc/apt/sources.list 
           sudo apt-get update
-          sudo apt-get install -y libproxmox-backup-qemu0-dev
+          sudo apt-get install -y libzstd1 libproxmox-backup-qemu0-dev
           sudo apt-get install -y git make libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build \
             build-essential libaio-dev libbluetooth-dev libcapstone-dev libbrlapi-dev libbz2-dev \
             libcap-ng-dev libcurl4-gnutls-dev libgtk-3-dev libibverbs-dev libjpeg8-dev libncurses5-dev \
