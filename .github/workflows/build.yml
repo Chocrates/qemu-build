@@ -14,12 +14,12 @@ jobs:
           wget -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg "https://enterprise.proxmox.com/debian/proxmox-release-bookworm.gpg"
           apt-get update
           apt-get install -y libzstd1 build-essential git git-email debhelper pve-doc-generator
-          apt-get install -y git make libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build \
-            build-essential libaio-dev libbluetooth-dev libcapstone-dev libbrlapi-dev libbz2-dev \
-            libcap-ng-dev libcurl4-gnutls-dev libgtk-3-dev libibverbs-dev libjpeg62-turbo-dev libncurses5-dev \
-            libnuma-dev librbd-dev librdmacm-dev libsasl2-dev libsdl2-dev libseccomp-dev libsnappy-dev \
-            libssh-dev libvde-dev libvdeplug-dev libvte-2.91-dev libxen-dev liblzo2-dev valgrind xfslibs-dev \
-            libnfs-dev libiscsi-dev equivs devscripts
+          #apt-get install -y git make libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build \
+           # build-essential libaio-dev libbluetooth-dev libcapstone-dev libbrlapi-dev libbz2-dev \
+           # libcap-ng-dev libcurl4-gnutls-dev libgtk-3-dev libibverbs-dev libjpeg62-turbo-dev libncurses5-dev \
+           # libnuma-dev librbd-dev librdmacm-dev libsasl2-dev libsdl2-dev libseccomp-dev libsnappy-dev \
+           # libssh-dev libvde-dev libvdeplug-dev libvte-2.91-dev libxen-dev liblzo2-dev valgrind xfslibs-dev \
+           # libnfs-dev libiscsi-dev equivs devscripts
           apt-get install -y autotools-dev autogen dh-autoreconf dkms doxygen check pkg-config \
             groff quilt dpatch automake autoconf libtool lintian libdevel-cycle-perl \
             libjson-perl libcommon-sense-perl liblinux-inotify2-perl libio-stringy-perl \
