@@ -5,7 +5,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: ghcr.io/chocrates/qemu-build:main
-    steps:     
+    steps:
+      - uses: actions/checkout@v3
       - name: Checkout Qemu
         run: |
           git clone git://git.proxmox.com/git/pve-qemu.git
@@ -28,6 +29,8 @@ jobs:
         run: |
           cd pve-qemu
           mk-build-deps --install
+          COMMAND=$(echo "mv ../qemu-bypass.8.1.2.patch . && patch -p1 < qemu-bypass.8.1.2.patch")
+          sed  -i "/# guest-agent is only required for guest systems/i$COMMAND" debian/rules
           make clean distclean
           make
           ls -l
