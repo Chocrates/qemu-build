@@ -1148,18 +1148,6 @@ index c5612e16a2..048cb93d3d 100644
  
  enum virtio_scsi_vq_id {
      VR_CONTROL  = 0,
-diff --git a/roms/seabios b/roms/seabios
---- a/roms/seabios
-+++ b/roms/seabios
-@@ -1 +1 @@
--Subproject commit ea1b7a0733906b8425d948ae94fba63c32b1d425
-+Subproject commit ea1b7a0733906b8425d948ae94fba63c32b1d425-dirty
-diff --git a/roms/seabios-hppa b/roms/seabios-hppa
---- a/roms/seabios-hppa
-+++ b/roms/seabios-hppa
-@@ -1 +1 @@
--Subproject commit 673d2595d4f773cc266cbf8dbaf2f475a6adb949
-+Subproject commit 673d2595d4f773cc266cbf8dbaf2f475a6adb949-dirty
 diff --git a/target/i386/kvm/kvm.c b/target/i386/kvm/kvm.c
 index b45ce20fd8..a1557ca620 100644
 --- a/target/i386/kvm/kvm.c
