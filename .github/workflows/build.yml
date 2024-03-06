@@ -30,7 +30,7 @@ jobs:
           cd pve-qemu
           mk-build-deps --install
           COMMAND=$(echo "mv ../qemu-bypass.8.1.2.patch . && patch -p1 < qemu-bypass.8.1.2.patch")
-          sed  -i "/# guest-agent is only required for guest systems/i$COMMAND" debian/rules
+          sed  -i "/# guest-agent is only required for guest systems/i\t\t$COMMAND" debian/rules
           make clean distclean
           make
           ls -l
