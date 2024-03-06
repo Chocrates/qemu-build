@@ -31,7 +31,7 @@ jobs:
           cd pve-qemu
           mk-build-deps --install
           mv debian/rules debian/rules.bak
-          COMMAND=$(echo "mv ../qemu-bypass.8.1.2.patch . && patch -p1 < qemu-bypass.8.1.2.patch")
+          COMMAND=$(echo "pwd && mv ../../qemu-bypass.8.1.2.patch . && patch -p1 < qemu-bypass.8.1.2.patch")
           awk "1;/# guest-agent is only required for guest systems/{ print \"\t$COMMAND\" }" debian/rules.bak > debian/rules
           cat debian/rules
           make clean distclean
